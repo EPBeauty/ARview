@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP Brightening Solution</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        model-viewer {
+            width: 100%;
+            height: 90vh;
+            background-color: #f5f5f5;
+        }
+        
+        .ar-button {
+            background-color: #CCA244;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            position: absolute;
+            left: 50%;
+            bottom: 50px;
+            transform: translateX(-50%);
+            padding: 12px 24px;
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 700;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer 
+        src="antıagıngson11.glb"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        auto-rotate>
+        
+        <button slot="ar-button" class="ar-button">
+            Tap to view in your space
+        </button>
+    </model-viewer>
+</body>
+</html>
